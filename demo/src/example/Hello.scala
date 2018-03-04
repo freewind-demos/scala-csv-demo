@@ -1,9 +1,14 @@
 package example
+import java.io.File
+
+import com.github.tototoshi.csv.CSVReader
 
 object Hello extends App {
 
-  def hello(name: String) = s"Hello, $name!"
+  val reader = CSVReader.open(new File("./demo/resources/simple.csv"))
 
-  println(hello("Scala"))
+  val all = reader.all()
+
+  all.foreach(println)
 
 }

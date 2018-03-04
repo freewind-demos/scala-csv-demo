@@ -1,5 +1,7 @@
-Mill Base Project Demo
+Scala-CSV Demo
 ======================
+
+How to read csv file in scala.
 
 Install mill:
 
@@ -10,7 +12,7 @@ sudo curl -L -o /usr/local/bin/mill https://github.com/lihaoyi/mill/releases/dow
 Run project:
 
 ```
-mill demo.test
+mill demo.run
 ```
 
 Generate IDEA project:
@@ -18,3 +20,8 @@ Generate IDEA project:
 ```
 mill.scalalib.GenIdeaModule/idea
 ```
+
+Resources
+---------
+
+- <https://github.com/tototoshi/scala-csv>
